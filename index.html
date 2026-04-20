@@ -1,2 +1,266 @@
-# ThighamOxford.github.io
-Project Website
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thomas Higham</title>
+
+<link rel="icon" href="assets/TH2.svg" type="image/svg+xml" />
+
+  <!-- Optional: icon library for social links. Delete this if you do not need icons. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e0e5ec;
+      --accent: #0f766e;
+      --card: #ffffff;
+      --max-width: 1000px;
+    }
+  
+    * { box-sizing: border-box; }
+  
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+  
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  
+    .wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+    }
+  
+    header {
+      position: sticky;
+      top: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+      background: var(--card);
+    }
+  
+    header img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+  
+    h1, h2, h3 {
+      margin-top: 0;
+      line-height: 1.25;
+    }
+  
+    h1 { font-size: 1.9rem; margin-bottom: 6px; }
+    h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  
+    .muted { color: var(--muted); }
+  
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin: 14px 0;
+    }
+  
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: #fafafa;
+    }
+  
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: white;
+      font-weight: bold;
+    }
+  
+    section {
+      padding: 18px;
+      margin-bottom: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+  
+    ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+  
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      background: #fafafa;
+    }
+    .card img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        margin-top: 12px;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 8px 0;
+    }
+  
+    /* Mobile */
+    @media (max-width: 800px) {
+      .wrapper {
+        grid-template-columns: 1fr;
+        padding: 14px;
+      }
+  
+      header {
+        position: static;
+      }
+  
+      section {
+        padding: 16px;
+      }
+  
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.15rem; }
+    }
+  </style>
+  </head>
+<body>
+  <div class="wrapper">
+    <header>
+      <!-- CHANGE THIS: your name -->
+      <h1>Thomas Higham</h1>
+
+      <!-- CHANGE THIS: add your photo path here -->
+      <img src="assets/img/portrait.jpg" alt="Portrait of Thomas Higham" />
+
+      <!-- CHANGE THIS: short bio line -->
+      <p class="muted">DPhil student / Department of Mathematics, University of Oxford</p>
+
+      <!-- CHANGE THIS: your email -->
+      <p><a href="mailto:Thomas.Higham@maths.ox.ac.uk">Thomas.Higham@maths.ox.ac.uk</a></p>
+
+      <!-- CHANGE THIS: social links. Delete any you do not use. -->
+      <div class="social-icons">
+        <a href="https://github.com/ThighamOxford" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/thomas-higham-835474206" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <!-- CHANGE THIS: optional buttons 
+      <a class="button-link" href="cv/">CV</a><br />
+      <a class="button-link" href="publications/">Publications</a>
+    -->
+    </header>
+
+    <main>
+      <section>
+        <h2>About</h2>
+        <!-- CHANGE THIS: short introduction paragraph -->
+        <p>
+          I am a first year DPhil student at the University of Oxford supervised by Professor Patrick Farrell, as well as by Dr Christopher Ham and Dr Ed Threlfall at the UK Atomic Energy Authority.
+          I work on the calculation of plasma equilibria in fusion devices, with a particular interest in non-axisymmetric equilibria. I am interested in hearing from anyone working on similar problems.
+        </p>
+      </section>
+
+      <section>
+        <h2>Research interests</h2>
+        <!-- CHANGE THIS: replace with your own interests -->
+        <ul>
+          <li>Tokamak plasma equilibria</li>
+          <li>Multiple solutions of nonlinear PDEs</li>
+          <li>Magnetohydrodynamics</li>
+          <li>Firedrake (Finite Element Code) </li>
+        </ul>
+      </section>
+
+      <!-- <section>
+        <h2>Selected publications</h2> -->
+        <!-- CHANGE THIS: add or remove publication cards -->
+        <!-- <div class="cards">
+          <div class="card">
+            <h3><a href="#">Paper title goes here</a></h3>
+            <p class="small">2026 · Journal / preprint / conference</p>
+            <p>Add a 1–2 sentence summary or leave this out.</p>
+          </div>
+
+          <div class="card">
+            <h3><a href="#">Another paper title</a></h3>
+            <p class="small">2025 · Journal / preprint / conference</p>
+            <p>Short description here.</p>
+          </div>
+        </div>
+
+        <p><a href="publications/">View all publications</a></p>
+      </section> -->
+
+      <section>
+        <h2>News</h2>
+        <!-- CHANGE THIS: use this section for a current announcement -->
+        <div class="card">
+          <p><strong>Talk:</strong> On 13/02/26 I gave a talk to the SIAM student chapter at the University of Manchester on “Finding MHD equilibria via magneto-frictional
+            relaxation". There I discussed work I have done with <a href="https://borisandrews.github.io/">Boris Andrews</a> on a helicity-preserving scheme for finding axisymmetric plasma equilibria. </p>
+            <img src="assets/img/SIAM_MCR_Talk.jpg" alt="Talk at Manchester SIAM student chapter"> 
+            <p><strong>Meeting:</strong> On 31/03/26 I attended the Bath-RAL Day 2026 and enjoyed making new connections and discussing my work.
+    
+        </div>
+      </section>
+
+      <section>
+        <h2>Upcoming</h2>
+        <!-- CHANGE THIS: use this section for a current announcement -->
+        <div class="card">
+            <p><strong>24/05/26:</strong> I will be attending the EMS School on Mathematical Aspects of Fluid Flows in Kácov, Czech Republic.</p>
+            <p><strong>01/06/26:</strong> I will be attending the PETSc annual user meeting and Firedrake ‘26.</p>
+            <p><strong>29/06/26:</strong> I will be attending SciCADE 2026.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2>Short CV</h2>
+        <!-- CHANGE THIS: keep this very short if you want the page easy to maintain -->
+        <ul>
+          <li><strong>2021–2025</strong> · MMath student / University of Warwick</li>
+          <li><strong>2025–Now</strong> · DPhil student / University of Oxford</li>
+        </ul>
+        <!-- <p><a href="cv/">View full CV</a></p> -->
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <!-- CHANGE THIS: put your preferred contact details here -->
+        <p>
+          Email: <a href="mailto:Thomas.Higham@maths.ox.ac.uk">Thomas.Higham@maths.ox.ac.uk</a><br />
+          Location: Oxford, United Kingdom
+        </p>
+      </section>
+
+      <footer>
+        <!-- Optional footer text -->
+        <p>© 2026 Thomas Higham</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
